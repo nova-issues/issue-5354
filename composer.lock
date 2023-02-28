@@ -4,8 +4,44 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ac4db4fff68f119c102573319cc39fa5",
+    "content-hash": "e5eee9773d0a2b47f813c7240d1ae8e4",
     "packages": [
+        {
+            "name": "acme/price-tracker",
+            "version": "0.1.0",
+            "dist": {
+                "type": "path",
+                "url": "./nova-components/PriceTracker",
+                "reference": "8ea547bd3ce59b9b96e6370eddbb4290094cb152"
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Acme\\PriceTracker\\ToolServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Acme\\PriceTracker\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova tool.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
         {
             "name": "brick/math",
             "version": "0.10.2",
